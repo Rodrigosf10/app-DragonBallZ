@@ -1,0 +1,19 @@
+<h2 class="text-center">Listado de Personajes</h2>
+<!--<ul *ngFor="let character of characterList">
+    <li>Personaje: {{character.name}} - Poder: {{character.power}} KI</li>
+</ul>-->
+<br>
+<table class="table table-sm table-bordered border-dark table-striped text-center">
+    <thead style="background-color: orange;">
+        <tr>
+            <th style="font-size: 20px;">Nombre</th>
+            <th style="font-size: 20px;">Poder de KI</th>
+        </tr>
+    </thead>
+    <tbody style="background-color: rgb(120, 120, 255);">
+        <tr *ngFor="let character of characterList">
+            <td style="color: white;">{{character.name}}</td>
+            <td style="color: white;">{{character.power | number: '1.0'}}</td>
+        </tr>
+    </tbody>
+</table>

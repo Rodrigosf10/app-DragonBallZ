@@ -1,0 +1,14 @@
+<h2 class="text-center">Agregar Personaje</h2>
+<br>
+<form (ngSubmit)="emitCharacter()" class="text-center">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control rounded-pill border-dark" name="name" [(ngModel)]="characterAdd[0].name">
+        <label for="">Personaje:</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control rounded-pill border-dark" name="power" [(ngModel)]="characterAdd[0].power">
+        <label for="">Nivel de Poder:</label>
+    </div>
+    <br>
+    <button class="btn btn-lg btn-primary border-dark rounded-0">Agregar</button>
+</form>
